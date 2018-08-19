@@ -1,0 +1,241 @@
+body{
+    font: 100 16px/1.5 sans-serif, Helvetica Neue,Helvetica,Arial;  
+    box-sizing: border-box; 
+    background-color: #333;  
+    margin:0px; 
+}
+header{
+   height: 70px;
+   position: fixed;
+   padding: 10px 20px;
+   background: url(https://www.linkedin.com/sc/h/3chad3rzxalsf65nuo7hxciac);
+   box-shadow: 0px 1px 1px 1px #afaeb4;
+   border-color: #afaeb4;
+   width: 100%;
+   justify-content: space-between;
+   z-index: 1;
+}
+.header-contents {
+   margin-right: 50px;
+   z-index:999;
+}
+.brand {
+    margin-left: 40px;
+    float:left;
+    font-size: 20px; 
+    font: 600 25px/1.35 sans-serif, Helvetica Neue,Helvetica,Arial; 
+}
+a{  
+  color: #FFF;
+  text-decoration: none !important;
+}
+a:hover{
+  color: #FFF;
+}
+nav{
+  float: right;
+}
+.links{
+  margin-bottom:20px;  
+  float: left; 
+}
+nav a {   
+    color: #e7e7e7;
+    text-transform:uppercase;
+    padding: 8px 10px;  
+}
+nav a:hover {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #343436;
+  text-decoration: none;
+}
+nav a:active {
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.50);
+}
+
+section{ 
+  margin: 0px 60px;
+  color: #666;
+}
+.heading{  
+    font: 600 25px/1.35 sans-serif, Helvetica Neue,Helvetica,Arial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ #about img {
+    float:left;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    margin: 20px;
+}
+.passion{
+  text-align: justify;
+}
+.bordered{  
+  margin: 10px;
+  display: inline-block;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.bordered:hover {
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.25);
+}
+#about{
+  padding: 120px 70px;  
+  background-color: #DDD; 
+  box-shadow: 0 1px 8px #576;  
+  border-bottom: 1px solid #D8D8D8;
+}
+#about passion{  
+  text-align:right;
+  float: right;
+}
+.social_btn{
+  cursor: pointer;
+  list-style:none;
+  border: none; 
+  border-radius:4px;
+  height: 28px;
+  background-color: #1B95E0;
+  float:left;
+  margin-right: 5px;
+  width:6%;  
+  text-align:center;  
+  padding: 2px 8px;
+  font: 500 14px/1.5 sans-serif;
+}
+.social_btn:hover{
+  background-color: #0068ad;
+}
+.social_btn >a{
+  white-space: nowrap;
+  color: #FFFFFF;    
+  font-size: 1em;
+  text-decoration: none;
+}
+.showcase{
+  margin: 15px;
+  -webkit-filter: grayscale(5);
+  filter: gray;
+  -webkit-transition: all .5s ease-in-out;
+  float: left;
+}
+.showcase:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 768px) {
+  .showcase {
+    width: 100%;
+    float: none;
+  }
+}
+#portfolio, #contact{
+  display:block;
+  margin-top: 5px;
+  padding: 30px 50px;  
+  background-color: #DDD; 
+  box-shadow: 0 1px 8px #576;  
+  border-bottom: 1px solid #D8D8D8;
+  height:550px;
+}
+form{
+  margin: 60px 100px;
+}
+
+.form_field{
+    opacity: 0.8;
+}
+input, textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 0px;
+  outline: none;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+  font-size: 16px; 
+}
+.submit_btn{
+  cursor: pointer;
+  border: 1px solid #333;
+  box-shadow: 0 1px 0 #333;
+  font-size:20px;
+}
+footer{
+  background-color:#AAA;
+  color: #FFF;
+  text-align: center;
+  padding: 20px;  
+}
+
+#view_more{
+  color: #1B95E0;
+}
+
+
+/* animation */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* animation i page content */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: justify;
+}
+
+
+/* Errors */
+.error{
+  color : #F00;
+} 
+
+.successs_info {
+  color: "#00bd30";
+}
